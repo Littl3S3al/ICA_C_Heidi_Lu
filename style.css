@@ -1,0 +1,64 @@
+html {
+  max-width: 100vw;
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#overlay {
+  background: black;
+  width: 100vw;
+  height: 100vh;
+  color: white;
+  z-index: 1000;
+}
+#overlay .row {
+  height: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+#three-js-container {
+  z-index: -1;
+  display: none;
+}
+#three-js-container canvas {
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+}
+
+#loading {
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#loading .progress {
+  margin: 1.5em;
+  border: 1px solid white;
+  width: 50vw;
+  background: black;
+}
+
+#loading .progressbar {
+  margin: 2px;
+  background: white;
+  height: 1em;
+  transform-origin: top left;
+  width: 0%;
+}
+
+/*# sourceMappingURL=style.css.map */
